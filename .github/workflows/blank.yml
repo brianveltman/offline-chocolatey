@@ -26,5 +26,5 @@ jobs:
       - name: Download files
         run: |
           $url = "https://dl.google.com/tag/s/dl/chrome/install/googlechromestandaloneenterprise.msi"
-          $output = "$GITHUB_WORKSPACE\tools\googlechromestandaloneenterprise.msi"
+          $output = "$Env:GITHUB_WORKSPACE\tools\googlechromestandaloneenterprise.msi"
           Invoke-WebRequest $url -OutFile $output
