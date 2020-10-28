@@ -25,4 +25,4 @@ jobs:
       # Runs a single command using the runners shell
       - name: Download files
         run: |
-          wget "https://dl.google.com/tag/s/dl/chrome/install/googlechromestandaloneenterprise.msi" -outfile "$Env:GITHUB_WORKSPACE\tools\googlechromestandaloneenterprise.msi"
+          wget "https://dl.google.com/tag/s/dl/chrome/install/googlechromestandaloneenterprise.msi" -outfile "$GITHUB_WORKSPACE\tools\googlechromestandaloneenterprise.msi"
