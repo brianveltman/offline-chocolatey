@@ -21,7 +21,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-        lfs: true
+        with:
+          lfs: true
 
       - name: Chocolatey Pack
         uses: crazy-max/ghaction-chocolatey@v1.3.1
