@@ -33,20 +33,14 @@ jobs:
         with:
           path: '*.nupkg'
 
-  # release:
-  #   # The type of runner that the job will run on
-  #   runs-on: windows-latest
+  release:
+  # The type of runner that the job will run on
+    runs-on: windows-latest
 
-  #   # Steps represent a sequence of tasks that will be executed as part of the job
-  #   steps:
-  #     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-  #     - uses: actions/checkout@v2
+    - uses: actions/download-artifact@v2
 
-  #     - name: Chocolatey Pack
-  #       uses: crazy-max/ghaction-chocolatey@v1.3.1
-  #       with:
-  #         args: pack
-
+    - name: Display structure of downloaded files
+      run: ls -R
   #     - name: Create Release
   #       id: create_release
   #       uses: actions/create-release@v1
