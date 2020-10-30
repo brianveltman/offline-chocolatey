@@ -29,7 +29,7 @@ jobs:
 
       - uses: actions/upload-artifact@v2
         with:
-          path: *.nupkg
+          path: '*.nupkg'
 
   # release:
   #   # The type of runner that the job will run on
